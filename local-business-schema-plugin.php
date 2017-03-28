@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Coinso local business customizer
-Plugin URI: http://
+Plugin URI: https://github.com/coinso/coinso-local-business-customizer
 Description: Add local business schema from the customizer
 Author: Ido @ Coinso
 Author URI: http://coinso.com

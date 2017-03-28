@@ -16,7 +16,7 @@ if( ! defined( 'ABSPATH' ) ) {
         <ul class="footer-list" style="list-style-type: none; padding-left: 0;" >
             <li>
                 <div class="footer-logo">
-                    <a itemprop="url" href="<?php echo get_home_url(); ?>" alt="<?php echo get_bloginfo('name'); ?>"  title="<?php echo get_bloginfo('name'); ?>">
+                    <a itemprop="url" href="<?php echo get_home_url(); ?>" alt="<?php echo get_theme_mod('schema_brand_name') ? get_theme_mod('schema_brand_name') : get_bloginfo('name'); ?>"  title="<?php echo get_theme_mod('schema_brand_name') ? get_theme_mod('schema_brand_name') : get_bloginfo('name'); ?>">
                         <span itemprop="logo" itemtype="https://schema.org/ImageObject">
                             <img src="<?php echo get_theme_mod('schema_logo') ? get_theme_mod('schema_logo') : get_stylesheet_directory_uri() .'/assets/img/logo.png' ;?>" alt="<?php echo get_bloginfo('name'); ?>" itemprop="image">
                         </span>
@@ -26,18 +26,18 @@ if( ! defined( 'ABSPATH' ) ) {
 
             <li>
                 <div class="footer-company-info">
-                    <span itemprop="name"><?php echo get_bloginfo('name'); ?></span><br>
-                    <span itemprop="description"><?php echo get_theme_mod('schema_brand_description') ? get_theme_mod('schema_brand_description') : get_bloginfo('description');?></span>
+                    <span class="schema_cap" itemprop="name"><?php echo get_theme_mod('schema_brand_name') ? get_theme_mod('schema_brand_name') : get_bloginfo('name'); ?></span><br>
+                    <span class="schema_cap" itemprop="description"><?php echo get_theme_mod('schema_brand_description') ? get_theme_mod('schema_brand_description') : get_bloginfo('description');?></span>
                 </div>
             </li>
             <li class="inline-block">
                 <div class="footer-address">
                     <div class="description" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <i class="fa fa-home">&nbsp</i>
-                        <span itemprop="streetAddress"><?php echo get_theme_mod('schema_street_address') ? get_theme_mod('schema_street_address') : 'Street Name' ?></span>,<br>
-                        <span itemprop="addressLocality"><?php echo get_theme_mod('schema_city') ? get_theme_mod('schema_city') : 'City Name' ?>,</span>
-                        <span itemprop="addressRegion"><?php echo get_theme_mod('schema_region') ? get_theme_mod('schema_region') : 'Region' ?>,</span>
-                        <span itemprop="postalCode"><?php echo get_theme_mod('schema_zip') ? get_theme_mod('schema_zip') : 'Zip Code' ?></span>
+                        <span class="schema_cap" itemprop="streetAddress"><?php echo get_theme_mod('schema_street_address') ? get_theme_mod('schema_street_address') : 'Street Name' ?></span>,<br>
+                        <span class="schema_cap" itemprop="addressLocality"><?php echo get_theme_mod('schema_city') ? get_theme_mod('schema_city') : 'City Name' ?>,</span>
+                        <span class="schema_cap" itemprop="addressRegion"><?php echo get_theme_mod('schema_region') ? get_theme_mod('schema_region') : 'Region' ?>,</span>
+                        <span class="schema_cap" itemprop="postalCode"><?php echo get_theme_mod('schema_zip') ? get_theme_mod('schema_zip') : 'Zip Code' ?></span>
                     </div>
                 </div>
             </li>
