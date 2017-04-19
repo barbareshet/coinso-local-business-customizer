@@ -8,7 +8,7 @@ Author URI: http://coinso.com
 Version: 1.0
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: The name of your plugin directory
+Text Domain: ido_lbc
 */
 if( ! defined( 'ABSPATH' ) ) {
     return;
@@ -19,9 +19,10 @@ if( ! defined( 'ABSPATH' ) ) {
 
 //Includes
 //1.1 include registration
-include('inc/local-business-schema-plugin-activation.php');
-include ('inc/local-business-schema-plugin-customizer.php');
-include ('inc/local-business-schema-plugin-scripts.php');
+
+require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-activation.php' );
+require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-customizer.php' );
+require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-scripts.php' );
 
 
 

@@ -14,11 +14,23 @@ function coinso_local_business_customize_register($wp_customize){
 //
 //=================Local Business Schema===============================//
 //
+    // Add Social Panel
+    $wp_customize->add_panel( 'Local Business Information', array(
+        'priority' => 30,
+        'capability' => 'edit_theme_options',
+        'theme_supports' => '',
+        'title' => __( 'Local Business Information', 'ido_lbc' ),
+        'description' => __( 'Add your local business information.', 'ido_lbc' ),
+    ) );
 // Local Business Schema
     $wp_customize->add_section('Schema', array(
         'title' => __('Local Business Schema', 'coinso_towing_theme'),
         'description' => sprintf(__('Options for Local Business Schema', 'coinso_towing_theme')),
-        'priority' => 30
+        'priority' => 30,
+        'capability' => 'edit_theme_options',
+        'theme_supports' => '',
+        'description' => '',
+        'panel' => 'Local Business Information'
     ));
 //Brand Logo settings
     $wp_customize->add_setting('schema_logo', array(
@@ -197,22 +209,22 @@ function coinso_local_business_customize_register($wp_customize){
     // Social Panel
     //**
 
-    // Add Social Panel
-    $wp_customize->add_panel( 'Social', array(
-        'priority' => 30,
-        'capability' => 'edit_theme_options',
-        'theme_supports' => '',
-        'title' => __( 'Social Links', 'amf' ),
-        'description' => __( 'Put in the social links for this site.', 'amf' ),
-    ) );
+//    // Add Social Panel
+//    $wp_customize->add_panel( 'Social', array(
+//        'priority' => 30,
+//        'capability' => 'edit_theme_options',
+//        'theme_supports' => '',
+//        'title' => __( 'Social Links', 'ido_lbc' ),
+//        'description' => __( 'Put in the social links for this site.', 'ido_lbc' ),
+//    ) );
     // Add Social Section
     $wp_customize->add_section( 'social_links', array(
         'priority' => 10,
         'capability' => 'edit_theme_options',
         'theme_supports' => '',
-        'title' => __( 'Social Links', 'amf' ),
-        'description' => '',
-        'panel' => 'Social',
+        'title' => __( 'Social Links', 'ido_lbc' ),
+        'description' => __( 'Put in the social links for this site.', 'ido_lbc' ),
+        'panel' => 'Local Business Information',
     ) );
 
     // Add Facebook settings
@@ -230,7 +242,7 @@ function coinso_local_business_customize_register($wp_customize){
         'type' => 'url',
         'priority' => 10,
         'section' => 'social_links',
-        'label' => __( 'Facebook URL Field', 'amf' ),
+        'label' => __( 'Facebook URL Field', 'ido_lbc' ),
         'description' => 'Put in the facebook page link.',
     ) );
 
@@ -249,7 +261,7 @@ function coinso_local_business_customize_register($wp_customize){
         'type' => 'url',
         'priority' => 10,
         'section' => 'social_links',
-        'label' => __( 'Twitter URL Field', 'amf' ),
+        'label' => __( 'Twitter URL Field', 'ido_lbc' ),
         'description' => 'Put in the twitter page link.',
     ) );
 
@@ -268,7 +280,7 @@ function coinso_local_business_customize_register($wp_customize){
         'type' => 'url',
         'priority' => 10,
         'section' => 'social_links',
-        'label' => __( 'Google Plus URL Field', 'amf' ),
+        'label' => __( 'Google Plus URL Field', 'ido_lbc' ),
         'description' => 'Put in the google plus page link.',
     ) );
 
@@ -287,7 +299,7 @@ function coinso_local_business_customize_register($wp_customize){
         'type' => 'url',
         'priority' => 10,
         'section' => 'social_links',
-        'label' => __( 'Yelp URL Field', 'amf' ),
+        'label' => __( 'Yelp URL Field', 'ido_lbc' ),
         'description' => 'Put in the Yelp page link.',
     ) );
 
