@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+נגישות באינטרנט היא הנושא החם ביותר כרגע בעולם פיתוח האתרים. כל מי שנמצא בקבוצה כזו או אחרת כבר שמע לא פעם על הנושא, על החוק ועל טענות בעד ונגד, ולכן לא ארחיב בנושא. העובדה היא שבאוקטובר 2017 <a href="http://www.justice.gov.il/Units/NetzivutShivyon/MercazHameidaLenegishut/NegishutSherutZiburi/NegishutMeidaKatuvUbealPeh/Pages/HangashatAtreiInternet.aspx" target="_blank" rel="nofollow noopener noreferrer">חוק הנגישות</a> ייכנס לתוקפו, ועל אתרי האינטרנט הקיימים בארץ לעמוד בחוקי הנגישות (או לקבל פטור עפ"י קריטריונים הקבועים בחוק), כל אחד בהתאם לדרישות החוק.
+מאמר זה גם אינו בא להמליץ לכם על תוסף כזה או אחר אשר נותן פתרון מלא / חלקי לנושא הנגישות של האתרים שלכם, גם על כך נכתב כבר הרבה ע"י רבים וטובים.
+במאמר זה אציג מגוון כלים חינמיים למפתחים ובעלי אתרים לבדיקת תאימות האתר לתקנות הנגישות .
+<h2>כלי של גוגל לבדיקת נגישות אתרים</h2>
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/Accessibility-Developer-Tools-by-Google.png" alt="כלי של גוגל לבדיקת נגישות אתרים" />
+<br>
+גוגל מציע תוסף לכרום אשר סוקר את עמוד האינטרנט ומציג את תוצאות הבדיקה בתוך קונסולת כלי המפתחים (DevTool Console). השימוש בתוסף זה הוא די פשוט. מתקינים את התוסף מחנות התוספים של גוגל, טוענים את העמוד אותו אתם רוצים לבדוק, ניגשים לאזור כלי עזר למפתחים (F12), בוחרים בלשונית audit , ומריצים את הבדיקה.
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/Accessibility-Developer-Tools-by-Google-results.png" alt="כלי של גוגל לבדיקת נגישות אתרים - דו" />
+<br>
+אחד היתרונות העיקריים של תוסף זה, הוא שניתן לערוך את האלמנטים הבעייתיים מתוך הקונסולה (עריכה שניתן להעביר לאחר מכן להעביר לקוד המקור של האתר). בלחיצה על לחצן ימני על האלמנט המבוקש, ניתן לבחור באופציה edit as html ולעבור ישירות לאזור העריכה (Elements) לצורך תיקונים מידיים.
+<a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb">להורת התוסף לכרום</a>
+<h3>aXe</h3>
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/aXe.png" alt="תוסף כרום לבדיקת נגישות" /><br>
+גם הוא, כמו כלי בדיקות הנגישות של גוגל, הינו תוסף לכרום, אשר ניתן להתקנה מחנות האפליקציות של כרום. לאחר ההתקנה, גשו לקונסטלת החיפוש ומצאו את הלשונית aXe. לחצו על לביצוע בדיקת הנגישות של העמוד. התוסף יריץ בדיקה מיידית של העמוד ויציג לכם את השגירות הקיימות ואת רמת הדחיפות לביצוע התיקונים (Critical, Minor….). בלחיצה על כפתור inspect מצד ימין, תועברו ללשונית Elements, לביצוע תיקונים והתאמות לאלמנט הבעייתי.
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/aXe-results.png" alt="aXe - הצגת דו" /><br>
+<a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd" target="_blank" rel="nofollow noopener noreferrer">להורדת התוסף לכרום</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/" target="_blank" rel="nofollow">להורדת התוסף לפיירפוקס</a>
+<h3>תוסף כרום לבדיקת ניגודיות - Color Contrast Analyzer</h3>
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/Color-Contrast-Analyzer.png" alt="תוסף כרום לבדיקת ניגודיות" />
+
+לאחר התקנת תוסף זה, יתווסף אייקון קטן לסרגל הכלים שלכם. לצורך ביצוע בדיקת הניגודיות יש לגשת לעמוד אותו רוצים לבדוק, לבחור את רמת הנגיות הנדרשת, לבחור את האיזור אותו רוצים לבדוק וללחוץ על כפתור הסריקה.
+
+לאחר הבדיקה יופיע על גבי האתר הנבדק כיסוי שחור וסימון גבולות של כל האלמנטים אשר עומדים בדרישות הניגודיות (לפי רמת הבדיקה שביקשתם). איזורים בעלי ניגודיות בעייתית ייראו כחלק מהרקע השחור או לא יסומנו בכלל.
+חשוב לדעת כי הכלי בודק את כל האלמנטים הקיימים בעמוד (תמונות, טקסט, כפתורים וכו').
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/Color-Contrast-Analyzer-report.png" alt="תוסף כרום לבדיקת ניגודיות - תוצאות בדיקה" />
+<br>
+<a href="https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll/related" target="_blank" rel="nofollow">להורדת התוסף לכרום</a>
+<h3>כלי בדיקת נגישות של WAVE</h3>
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/wave-accessibility-test.png" alt="בדיקת נגישות על ידי תוסך wave" />
+<br>
+wave, בדומה לכלים קודמים שנסקרו קודם, מבצע בדיקת נגישות לעמוד המבוקש. היתרון של כלי זה הוא שהוא מספק את תוצאות הבדיקה על גבי האתר (בניגוד לשניים הקודמים אשר מציגים את התוצאות בקונסולת כלי המפתחים.
+אופן השימוש בתוסף זה הוא פשוט מאוד, לאחר התקנת התוסף, יש לגשת לכתובת האתר המבוקש, ללחוץ על האייקון שנוסף לסרגל הכלים ולאחר כמה שניות ייפתח סרגל צד המציג את תוצאות הבדיקה
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/wave-accessibility-test-errors.png" alt="בדיקת נגישות על ידי תוסך wave - הצגת שגיאות" />
+<br>
+כמה יתרונות מובהקים של הכלי:
+<ul>
+    <li>בסרגל הצד, לאחר ביצוע הבדיקה, ניתן לעבור בין האלמנטים ולקבל פירוט ספיציפי של כל אלמנט בעייתי</li>
+    <li>ניתן לבצע בדיקות רבות של העמוד באותו סרגל כלים (רמת נגישות, ניגודיות, פילטור בין תוצאות הבדיקה - למשל הצגת שגיאות בלבד ועוד).</li>
+    <li>בתחחתית העמוד קיימת לשונית "קוד" המציגה את הקוד של האלמנטים, במעבר על העמוד ולחיצה על אלמנט, תועברו לקטע הקוד המייצג אותו.</li>
+</ul>
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/wave-accessibility-test-code-area.png" alt="בדיקת נגישות על ידי תוסך wave - איזור קוד" />
+<br>
+חסרונות של הכלי:
+הוא אינו בודק תמונות רקע או מעברי צבעים (gradient)
+
+<a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh" target="_blank" rel="nofollow">להורדת תוסף כרום</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/" target="_blank" rel="nofollow">להורדת תוסף פיירפוקס</a>
+<h3>NoCffee - סימולטור ויזואלי</h3>
+
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/NoCoffee-visual-simulator.png" alt="סימולטור ויזואלי" /><br>
+תוסף נחמד לגוגל כרום, המשמש כסימולטור ויזואלי. באמצעות הסימולטור ניתן לבחון את האתר שלכם במצבים שונים של לקויות ראיה (עיוורון גוונים, קוצר ראייה וכו'). לתוסף קיים תפריט הגדרות אשר ניתן לבצע בו התאמות לפי הצרכים שלכם.
+<a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl/related" target="_blank" rel="nofollow">להורדת התוסף לכרום</a>
+<h2>תוכנות לבדיקת תאימות לקוראי מסכים</h2>
+<strong>VoiceOver</strong> – קורא מסך הפועל על מערכות iOS למינהן (iPhone, Mac, iPad), יש לתוכנה עקומת למידה מסויימת, אך כאשר מבינים את הקונספט, זהו כלי מצויין לבדיקת התאמות נגישות באתר.
+ניתן למצוא מדריך מפורט של apple על הכלי <a href="https://help.apple.com/voiceover/info/guide/10.10/#/vo2681" target="_blank" rel="nofollow">כאן</a>
+<strong>NVDA</strong> – תוכנה קוראת מסך למערכת ההפעלה של Windows, המשמשת לבדיקת התאמות נגישות באתר.
+את התוכנה ניתן להוריד בחינם <a href="https://www.nvaccess.org/download/" target="_blank" rel="nofollow">מכאן</a>
+<h2>פרוייקטים בגיטהאב לשיפור נגישות באינטרנט</h2>
+<strong>The A11Y Project</strong> - פרוייקט קוד פתוח המוקדש לשיפור הנגישות באינטרנט. פרוייקט זה הינו מהמובילים את תחום הנגישות באינטרנט.
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/The-A11Y-Project.png" alt="The A11Y Project" /><br>
+באתר הפרוייקט ניתן למצוא מדריכים מפורטים על תקנות הנגישות העולמיות, רשימת בדיקות לבחינת נגישות האתר, קישורים למקורות נוספים ועוד.
+<a href="http://a11yproject.com/" target="_blank" rel="nofollow">לאתר הפרוייקט</a>
+<strong>Tota11y</strong> – ספריית JS לבדיקת שגיאות נגישות הקיימים באתר.
+לאחר הורדת הספרייה והתקנתה באתר, יופיע סרגל קטן בצד המסך. לחיצה על הסרגל תפתח תפריט המאשר ביצוע בדיקות נגישות לאלמנטים ויזואלים, כמו גם תאימות לקוראי מסך
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/tota11y.png" alt="tota11y - כלי לבדיקת נגישות" /><br>
+
+<a href="http://khan.github.io/tota11y/" target="_blank" rel="nofollow">לעמוד התוסף</a>
+
+<strong>Accessible-colors.com</strong> – כלי לבדיקת ניגודיות
+<img src="http://www.barbareshet.co.il/wp-content/uploads/2017/04/accessible-colors.png" alt="Accessible-colors.com – כלי לבדיקת ניגודיות" /><br>
+
+יש להזין את הצבעים העיקריים באתר, טקסט - צבע + מאפיינים נוספים (גודל, משקל), צבע רקע עיקרי ואת רמת הנגישות הנבדקת. בסיום הזנת הפרטים תתקבל תוצאה מיידית של רמת תאימות הצבעים לתקנות הנגישות, ובמקרה של שגיאות, יוצגו פתרונות אפשריים.
+<a href="http://accessible-colors.com/" target="_blank" rel="nofollow">קישור לעמוד הפרוייקט</a>
+
+לסיכום, בסקירה קצרה זו הצגתי מספר כלים נפוצים בשימוש על ידי מפתחי אתרים. כלים אלו מסייעים לנו בביצוע בדיקות תאימות לרמות נגישות שונות. קיימים ברשת כלים נוספים / תוספים חלקם טובים יותר, חלקם טובים פחות. על כל מפתח לבחור את הכלים המתאימים לו על מנת לבצע הבדיקות. בסופו של דבר עלינו לזכור כי אוכלוסיה שלמה נפגעת מחוסר תאימות של אתר כשה או אחר, ואינה מממשת את זכותה הבסיסית לגלוש באינטרנט.
+
+</body>
+</html>
