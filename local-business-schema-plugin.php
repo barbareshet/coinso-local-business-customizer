@@ -23,6 +23,7 @@ if( ! defined( 'ABSPATH' ) ) {
 require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-activation.php' );
 require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-customizer.php' );
 require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-scripts.php' );
+require_once( plugin_dir_path(__FILE__) . '/inc/local-business-schema-plugin-ld-json.php' );
 
 
 
