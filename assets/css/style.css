@@ -1,3 +1,17 @@
-#footer-schema .schema_cap {
+#lbs-footer-schema .schema_cap {
     text-transform: capitalize !important;
+}
+.lbs-footer-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+#lbs-schema_city{
+    list-style-type: none;
+    margin-left: -15px;
+}
+#lbs-footer-schema >.lbs-footer-logo > a > span > img{
+    width:50%;
+}
+#lbs-footer-schema{
+    line-height:1.5;
 }
